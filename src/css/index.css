@@ -1,0 +1,432 @@
+@charset "UTF-8";
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#root {
+  height: 100vh;
+}
+
+/* Class general */
+.width-50, .container-button-menu {
+  width: 50%;
+}
+
+.text-center, button, h3 {
+  text-align: center;
+}
+
+.background-white, .div-product, header, form {
+  background-color: white;
+}
+
+.flex, header, .column, .div-product, .row, .flex-column, label, .flex-between, .flex-center, .badge__icon, .div-form {
+  display: flex;
+}
+
+.justify-center, .flex-center, .badge__icon, .div-form {
+  justify-content: center;
+}
+
+.justify-between, .column, .div-product, .flex-between {
+  justify-content: space-between;
+}
+
+.direction-column, .div-form, .column, .div-product, .flex-column, label {
+  flex-direction: column;
+}
+
+.align-center, header, .flex-between, .flex-center, .badge__icon, .div-form {
+  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column, .div-product {
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.padding-1, .div-product {
+  padding: 1rem;
+}
+
+.padding-05 {
+  padding: 0.5rem;
+}
+
+.padding-0-05 {
+  padding: 0 0.5rem;
+}
+
+.padding-0-15 {
+  padding: 0 1.5rem;
+}
+
+.padding-0-1 {
+  padding: 0 1rem;
+}
+
+.margin-0, h2, body {
+  margin: 0;
+}
+
+.margin-1, .div-product {
+  margin: 1rem;
+}
+
+.margin-05 {
+  margin: 0.5rem;
+}
+
+.margin-1-0 {
+  margin: 1rem 0;
+}
+
+.margin-0-1 {
+  margin: 0 1rem;
+}
+
+.bold-1rem {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #767676;
+}
+
+.border-botton {
+  border-bottom: 1px solid #375F1B;
+}
+
+/* Label general */
+h2 {
+  color: #66B032;
+}
+
+h3 {
+  color: #767676;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #66B032;
+}
+
+i {
+  font-size: 0.7rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+ul {
+  margin: 0;
+}
+
+input, select {
+  margin: 0.5rem 0;
+  border: 0;
+  border-bottom: 1px solid #DBDBDB;
+  background-color: transparent;
+  padding: 4px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  background-color: #66B032;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  outline: none;
+}
+
+form {
+  padding: 3rem;
+  border-radius: 4px;
+  border-color: #EBF7E3;
+}
+
+main {
+  width: 100%;
+  min-height: 100%;
+  background-color: #FAFAFA;
+  /* @media screen and (min-width: variables.$tablet) {
+    height: 85%;
+  } */
+}
+
+header {
+  height: 5%;
+  padding: 0.5rem 1rem;
+}
+@media screen and (min-width: 769px) {
+  header {
+    padding: 0 1rem;
+  }
+}
+
+ul > li > input[type=button] {
+  width: 100%;
+  margin: 0;
+  color: #66B032;
+  border: 0;
+}
+
+/* Style for login */
+.div-button {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.div-form {
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .div-form {
+    width: 50%;
+  }
+}
+
+.img-responsive {
+  background-image: url("../assets/image/vegan-food.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 769px) {
+  .img-responsive {
+    width: 50%;
+    height: 100vh;
+  }
+}
+
+/* Style for waiter menu */
+.div-product {
+  height: 5rem;
+}
+
+input[type=image], input[type=number] {
+  width: 1.5rem;
+  border: 0;
+}
+@media screen and (max-width: 425px) {
+  input[type=image], input[type=number] {
+    margin: 0;
+  }
+}
+
+input[type=number] {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+input[type=button] {
+  color: black;
+}
+@media screen and (min-width: 769px) {
+  input[type=button] {
+    width: 25%;
+  }
+}
+
+/* Style for waiter oder list */
+.div-order-list {
+  padding: 2rem;
+  margin: 1.5rem;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .div-order-list {
+    width: 37%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .div-order-list {
+    width: 20%;
+  }
+}
+
+/* Style for modal */
+.modal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+@media screen and (min-width: 769px) {
+  .modal-content {
+    width: 40%;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style for button menu */
+@media screen and (max-width: 769px) {
+  .container-button-menu {
+    width: 100%;
+  }
+}
+
+/* Style for items */
+.container-items {
+  margin: 2rem 1rem;
+}
+@media screen and (min-width: 769px) {
+  .container-items {
+    padding: 0 3rem;
+  }
+}
+
+.container-text {
+  width: 100%;
+  text-align: center;
+}
+
+/* Style for Alert */
+.alert {
+  width: 100%;
+  background-color: #f44336;
+  /* Red */
+  color: white;
+  height: 3rem;
+  border: 0.15rem solid #f1f1f1;
+  border-radius: 0.5rem;
+}
+
+.alert::before {
+  content: "×";
+  margin: 0 0.8rem;
+  border-radius: 1rem;
+  border: 0.15rem solid white;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+/* Style for Badge */
+.badge {
+  min-width: 2.5rem;
+  height: 3rem;
+  border-radius: 2rem;
+}
+@media screen and (min-width: 769px) {
+  .badge {
+    display: none;
+  }
+}
+
+.badge__icon {
+  background: red;
+  color: #fff;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  right: 1.5rem;
+  position: absolute;
+}
+@media screen and (max-width: 425px) {
+  .badge__icon {
+    margin-top: 0;
+  }
+}
+
+/* Styles for Loader */
+.container-loader {
+  width: 100%;
+  height: 50vh;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 5rem;
+  height: 5rem;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
