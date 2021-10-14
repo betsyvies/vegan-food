@@ -21,7 +21,7 @@ deletes and updates only the orders.
 
 `Admin`
   `email: admin@localhost.com`
-  `password: 123456`
+  `password: QWERTY12345678`
 
 `Collaborator`
   `email: betsy@localhost.com`
